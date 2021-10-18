@@ -12,7 +12,7 @@ export class AppComponent {
     const data = {
       name: 'Vishal'
     };
-    const event = new CustomEvent('parent-data-send', { detail: data });
+    const event = new CustomEvent('data-to-child', { detail: data });
     window.dispatchEvent(event);
 
   }
